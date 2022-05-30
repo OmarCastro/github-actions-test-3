@@ -1,0 +1,22 @@
+name: delete-old-packages
+on:
+  workflow_dispatch:
+
+jobs:
+  delete-old-packages:
+    runs-on: ubuntu-latest
+      
+    steps:
+      - name: Delete package
+        uses: actions/delete-package-versions@36d9774f0308c45a0546019cff52c8de068bbd3d
+        with: 
+            owner: NamrataJha
+            repo: actions-test, actions-test-2
+            package-name: ${{ matrix.node }}
+            min-versions-to-keep: 50
+      
+
+ 
+
+
+          
