@@ -8,11 +8,11 @@ jobs:
       
     steps:
       - name: Delete package
-        uses: OmarCastro/delete-package-versions@36d9774f0308c45a0546019cff52c8de068bbd3d
+        uses: OmarCastro/delete-package-versions@39865728ac8bd9bf4c47b841ad5452043118272b
         with: 
             owner: NamrataJha
             repo: actions-test-3
-            package-names: actions-test ,actions-test-3
+            package-names: actions-test, actions-test-3
             min-versions-to-keep: 5
             token: ${{ secrets.PAT }}
 
