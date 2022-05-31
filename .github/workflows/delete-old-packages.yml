@@ -10,8 +10,8 @@ jobs:
       - name: Delete package
         uses: OmarCastro/delete-package-versions@03234f817ba17a45567716fefee909d2720312e8
         with: 
-            owner: NamrataJha
-            repo: actions-test-3
+            owner: OmarCastro
+            repo: github-actions-test-3
             package-names: actions-test, actions-test-3
             min-versions-to-keep: 5
             token: ${{ secrets.PAT }}
